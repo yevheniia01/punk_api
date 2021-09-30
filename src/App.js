@@ -29,7 +29,7 @@ function App() {
       <Router>
             <Container id='main' fluid>
                  <Title /> 
-                  <Switch>  
+                  <Switch>  {/*set path as '/home' to run localy */}
                         <Route path='punk_api/home'>
                               <Search setBtnValue={setBtnValue} 
                                       btnValue={btnValue} 

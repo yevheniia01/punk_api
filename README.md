@@ -4,3 +4,4 @@ To run this app
 2.cd /punk_api
 3.Run npm i in terminal
 4.Run npm start
+5. In App.js change 'punk_api/home' path to '/home'
