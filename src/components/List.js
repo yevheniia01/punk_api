@@ -16,13 +16,13 @@ function List({listItem, btnValue, colStyle}) {
                 {/*If value of button onClick = food pairing value display items */}
                  { btnValue === item.food_pairing[0] || btnValue === ' '  ?
                    <Col md={4} lg={4} key={item.id}>
-                     <div id="itemCard"> 
+                      <div id="itemCard"> 
                           <img id="beerImg" src={item.image_url} alt=""/>
                           <h2 id="beerName">{item.name}</h2>
                           <p id="beerDescription">{item.description}</p>
                           <p id="beerFdPairing">Food pairing: {item.food_pairing}</p>
                       </div>
-                    </Col>: null} {/*if food paring value doesn't match pressed value button display nothing */}
+                    </Col>: null} {/*if food paring value doesn't match pressed value button, display nothing */}
                 </> 
                   ) 
                 })

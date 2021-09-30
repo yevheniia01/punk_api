@@ -26,34 +26,25 @@ function App() {
   },[])
 
   return (
-    <Router>
-        <Container id='main' fluid>
-                <Title /> 
-                {/*Sharing state with Search component*/}
-                <Switch>
-                
+      <Router>
+            <Container id='main' fluid>
+                 <Title /> 
+                  <Switch>  
+                        <Route path='punk_api/home'>
+                              <Search setBtnValue={setBtnValue} 
+                                      btnValue={btnValue} 
+                                      setColStyle={setColStyle} />
+                              <List listItem={listItem} 
+                                    btnValue={btnValue} 
+                                    colStyle={colStyle} />
+                        </Route>
+                        <Route path='/'>
+                              <Welcome />
+                        </Route>
                   
-                <Route path='/home'>
-                <Search setBtnValue={setBtnValue} 
-                        btnValue={btnValue} 
-                        setColStyle={setColStyle} 
-                  />
-                  <List listItem={listItem} 
-                      btnValue={btnValue} 
-                      colStyle={colStyle} 
-                      
-                />
-                </Route>
-                <Route path='/'>
-                      <Welcome />
-                   </Route>
-                  
-                </Switch>
-                  
-                {/*Sharing state with List component*/}
-                
-        </Container>
-        </Router>
+                  </Switch>
+            </Container>
+      </Router>
   );
 }
 
