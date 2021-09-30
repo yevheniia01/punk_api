@@ -24,7 +24,7 @@ export default function Welcome() {
                    <h1 id='welcomeTitle'>Welcome to PUNK API</h1>
                    <h2 id='welcomeDescription'>Click the Big blue Button to experinece amazing app I've made for you!</h2>
                    <br></br>
-                   <h3 id='ps'><strong>P.S</strong> There is a tiny bug, buttons return 'undefined' on first click, you will have to click buttons twice. 
+                   <h3 id='ps'><strong>P.S</strong> There is a tiny bug, buttons returns 'undefined' on first click, you will have to click buttons twice. 
                        Spent maaaaany hours to figure this out but my attempts failed.....
                     </h3>
                     <br></br>
