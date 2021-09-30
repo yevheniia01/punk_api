@@ -11,7 +11,8 @@ export default function Welcome() {
     const history = useHistory();
 
   const routeChange = () =>{ 
-    let path = `/home`; 
+    {/*Change path to '/home' to run localy */}
+    let path = `punk_api/home`; 
     history.push(path);
   }
     return (
