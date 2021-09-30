@@ -5,3 +5,5 @@ To run this app
 3.Run npm i in terminal
 4.Run npm start
 5. In App.js change 'punk_api/home' path to '/home'
+
+Deployed app https://yevheniia01.github.io/punk_api/
